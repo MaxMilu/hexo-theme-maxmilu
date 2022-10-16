@@ -1,0 +1,42 @@
+/* 代码块字体 */
+code {
+    font-family: 'Fira Code', monospace !important;
+}
+
+/* 代码块显示样式 */
+.hljs {
+    font-size: 13px;
+    background-color: #2d2a2e;
+    border-radius: 4px 4px 16px 16px;
+}
+
+article pre {
+    background-color: #221f22;
+    margin: 16px 0px 16px 0px;
+}
+
+pre {
+    padding: 30px 10px 10px 10px;
+}
+
+/* 代码滚动条 */
+/* width */
+.hljs::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.hljs::-webkit-scrollbar-track {
+    background: #454146;
+    border-radius: 16px;
+}
+
+/* Handle */
+.hljs::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.hljs::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

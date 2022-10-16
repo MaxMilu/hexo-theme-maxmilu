@@ -1,0 +1,39 @@
+{
+  "name": "hexo-theme-maxmilu",
+  "version": "4.1.3",
+  "description": "A fork hexo theme base hexo-theme-nexmoe.",
+  "keywords": [
+    "hexo",
+    "theme",
+    "nexmoe",
+    "maxmilu"
+  ],
+  "author": "MaxMilu (https://github.com/MaxMilu)",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint scripts/ source/js --fix",
+    "test": "echo test",
+    "postinstall": "node ./move_config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MaxMilu/hexo-theme-maxmilu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaxMilu/hexo-theme-maxmilu/issues"
+  },
+  "homepage": "https://docs.nexmoe.com/",
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "8.15.0"
+  },
+  "dependencies": {
+    "hexo-generator-json-content": "^4.2.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
