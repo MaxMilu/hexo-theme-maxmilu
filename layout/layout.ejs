@@ -40,24 +40,22 @@
         'lib/mdui_043tiny/mdui.css'
     ]) %>
 
-    <% if (theme.highlightjs.enable) { %>
-        <!--  highlight.js  -->
-        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@latest/build/highlight.min.js"></script>
-        <!--  highlight.js func init  -->
-        <script>
-          Array.from(document.querySelectorAll("pre code")).forEach(function (codeBlock) {
+    <!--  highlight.js  -->
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@latest/build/highlight.min.js"></script>
+    <!--  highlight.js func init  -->
+    <script>
+        Array.from(document.querySelectorAll("pre code")).forEach(function (codeBlock) {
             console.log(codeBlock.innerHTML)
             codeBlock.innerHTML = "<ol><li>" + codeBlock.innerHTML.replace(/\n/g, "\n</li><li>") + "\n</li></ol>";
-          });
-          hljs.initHighlightingOnLoad();
-        </script>
-        <!--  highlight.js theme css url -->
-        <%- css([
-            'lib/highlight_js/highlight_js.css'
-        ]) %>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.6.0/styles/base16/monokai.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
-    <% } %>
+        });
+        hljs.initHighlightingOnLoad();
+    </script>
+    <!--  highlight.js theme css url -->
+    <%- css([
+        'lib/highlight_js/highlight_js.css'
+    ]) %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.6.0/styles/base16/monokai.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
 
     <%- css_auto_version('lib/iconfont/iconfont.css') %>
     <% if (theme.iconlib) { %>
