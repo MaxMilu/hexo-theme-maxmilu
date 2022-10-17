@@ -51,11 +51,13 @@
         hljs.initHighlightingOnLoad();
     </script>
     <!--  highlight.js theme css url -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.6.0/styles/base16/monokai.css">
+    <!--  fira code font css url -->
     <%- css([
         'lib/highlight_js/highlight_js.css'
     ]) %>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.6.0/styles/base16/monokai.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
+
 
     <%- css_auto_version('lib/iconfont/iconfont.css') %>
     <% if (theme.iconlib) { %>
